@@ -23,9 +23,9 @@ This example shows how a Java program can use JDBC to connect with MySQL.
 
  - create a testdb:
     ```
-    mysql> create database moviedbexample;
+    mysql> create database if not exists moviedbexample;
     mysql> use moviedbexample;
-    mysql> create table stars(
+    mysql> create table if not exists stars(
                id varchar(10) primary key,
                name varchar(100) not null,
                birthYear integer
@@ -33,8 +33,8 @@ This example shows how a Java program can use JDBC to connect with MySQL.
     ```
  - insert some records:
     ``` 
-    mysql> INSERT INTO stars VALUES('755011', 'Arnold Schwarzeneggar', 1947);
-    mysql> INSERT INTO stars VALUES('755017', 'Eddie Murphy', 1961);
+    mysql> INSERT IGNORE INTO stars VALUES('755011', 'Arnold Schwarzeneggar', 1947);
+    mysql> INSERT IGNORE INTO stars VALUES('755017', 'Eddie Murphy', 1961);
 
     mysql> select * from stars;
     ```

@@ -6,7 +6,7 @@ This example shows how a Java program can use JDBC to connect with MySQL.
 
 1. Make sure you have properly installed Java, Maven, Git, MySQL, and Intellij on your local machine. <br/>
    This includes making sure that the MySQL version installed matches with the ```mysql-connector-java``` version in ```pom.xml```.
-2. Clone this repository using `git clone https://github.com/UCI-Chenli-teaching/cs122b-fall21-project1-jdbc-example.git`
+2. Clone this repository using `git clone`
 
 3. Create users and sample tables on mysql by executing the following command:
 
